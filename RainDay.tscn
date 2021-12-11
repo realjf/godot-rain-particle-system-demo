@@ -1,13 +1,15 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://raindrip.png" type="Texture" id=1]
 
 [sub_resource type="ParticlesMaterial" id=1]
+lifetime_randomness = 0.4
 emission_shape = 2
 emission_box_extents = Vector3( 600, 1, 1 )
 flag_disable_z = true
 gravity = Vector3( -30, 98, 0 )
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-scale = 5.0
 scale_random = 1.0
 color = Color( 0.631373, 0.67451, 0.698039, 1 )
 
@@ -30,5 +32,6 @@ __meta__ = {
 position = Vector2( 617.539, -22.4405 )
 amount = 800
 lifetime = 4.0
-speed_scale = 3.0
+speed_scale = 2.0
 process_material = SubResource( 1 )
+texture = ExtResource( 1 )
